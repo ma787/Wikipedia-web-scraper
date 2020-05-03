@@ -22,7 +22,7 @@ def info():
     option = input("Please enter the number of the section you would like to read: ")
 
     while option not in inputs:
-        option = input("please enter a valid number: ")
+        option = input("Please enter a valid number: ")
 
     body = r.html.find("div.mw-parser-output", first=True)
     selected = bullets[int(option) - 1]
